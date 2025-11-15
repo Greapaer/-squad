@@ -79,6 +79,13 @@
     margin-bottom: 10px;
   }
   p {
+    justify-content: center;
+    justify-self:center;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
     line-height: 1.5;
     margin-bottom: 20px;
   }
@@ -94,6 +101,9 @@
   }
   .btn:hover {
     background: #f39c12;
+  }
+  ::selection{
+    background-color: #f39c12;
   }
   footer {
     text-align: center;
@@ -122,14 +132,6 @@
         font-family: 'Roboto' !important;
         color: #e74c3c;
        }
-       #fr{
-        color: #e74c3c;
-        font-weight: 1000;
-        font-size: 18px;
-        letter-spacing: 1px;
-        text-align: center;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-       }
   table{  
     width: 1000px;
     background-color: #f39c12;
@@ -140,11 +142,13 @@
     color: #000000;
     
   }
-  h3{
-    font-weight: 1000;
-    font-size: 18px;
-    color: #ce5a4e;
-    text-align: start;
+  h4{
+        color: #e74c3c;
+        font-weight: 1000;
+        font-size: 25px;
+        letter-spacing: 1px;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
    #spis a{
 
@@ -155,51 +159,91 @@
 
   }
   #spis{
-    width: 200px;
+    width: 360px;
     justify-content: center;
     text-align: center;
     position: relative;
-    bottom: 540px;
-    left: 1000px;
+    right: -150%;
+    border: 1px solid #f39c12;
+    background-color: #000000;
+  }
+  .cont{
+    display: flex;
+    width: 800px;
+    flex-wrap: wrap;
+    text-align:start;
+  }
+  #Us{
+    justify-content: center;
+    justify-self:center;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+  }
+  footer{
+    height: 300px;
+  }
+  @media(max-width:1024px){
+    .cont{
+      width: 600px;
+      position: relative;
+      right: -20%;
+    }
+  }
+  @media(max-width:1024px){
+    .cont{
+      right: -10%;
+    }
   }
 </style>
     <main>
-    <div id="fr"><ol >Фракции</ol>
-          </div>
-          <ul style="position:absolute;top: 210px; left: 320px;">US Army</ul> <br> 
-          <img src="https://static.wikia.nocookie.net/squad_gamepedia/images/7/7d/US_Rifleman_Flag.jpg/revision/latest/scale-to-width-down/200?cb=20220427200922" alt="">
-          <ul style="position:absolute; right: 820px; top: 210px;">Russian Ground Source</ul>
-          <img src="https://static.wikia.nocookie.net/squad_gamepedia/images/2/2e/RUS_Rifleman_Flag.jpg/revision/latest/scale-to-width-down/200?cb=20220427200908" alt="" style="width: 200px">
-          <ul style="position:absolute; right: 650px; top: 210px;">British Army</ul>
-          <img src="https://static.wikia.nocookie.net/squad_gamepedia/images/d/d3/GB_Rifleman_Flag.jpg/revision/latest/scale-to-width-down/200?cb=20220427200746" alt="">
-          <ul style="position:absolute; right: 420px; top: 210px;" >Canadian Army</ul>
-          <img src="https://static.wikia.nocookie.net/squad_gamepedia/images/c/cb/CAF_Rifleman_Flag.jpg/revision/latest/scale-to-width-down/200?cb=20220427200610" alt="">
-          <ul style="position:absolute; right: 1075px; top: 350px;">Insurgents</ul>
-          <img  src="https://static.wikia.nocookie.net/squad_gamepedia/images/0/09/INS_Rifleman_Flag.jpg/revision/latest/scale-to-width-down/200?cb=20220427200817" alt="">
-          <ul style="position:absolute; right: 850px; top: 350px;">Irregular Militia</ul>
-          <img src="https://static.wikia.nocookie.net/squad_gamepedia/images/5/55/MIL_Rifleman_Flag.jpg/revision/latest/scale-to-width-down/200?cb=20240202105322" alt="">
-          <ul style="position:absolute; right: 620px; top: 350px;">Middle Eastern Alliance</ul>
-          <img src="https://static.wikia.nocookie.net/squad_gamepedia/images/1/11/MEA_Rifleman_Flag.jpg/revision/latest/scale-to-width-down/200?cb=20220427200849" alt="">
-          <ul style="position:absolute; right: 440px; top: 350px;">Australian Army</ul>
-          <img src="https://static.wikia.nocookie.net/squad_gamepedia/images/2/2e/AUS_Rifleman_Flag.jpg/revision/latest/scale-to-width-down/200?cb=20220427200341" alt="">
-          <ul style="position:absolute; right: 1050px; top: 485px;">Us Marine Corps</ul>
-          <img src="https://static.wikia.nocookie.net/squad_gamepedia/images/c/ca/USMC_Rifleman_Flag.jpg/revision/latest/scale-to-width-down/200?cb=20221230161657" alt="">
-          <ul style="position:absolute; right: 810px; top: 485px;">People's Liberation Army</ul>
-          <img src="https://static.wikia.nocookie.net/squad_gamepedia/images/6/67/PLAImage.jpg/revision/latest/scale-to-width-down/200?cb=20221230155024" alt="">
-          <ul style="position:absolute; right: 615px; top: 485px;">PLA Navy Marine Corps</ul>
-          <img src="https://static.wikia.nocookie.net/squad_gamepedia/images/d/d7/PLANMC_Rifleman_Flag.jpg/revision/latest/scale-to-width-down/200?cb=20230624031711" alt="">
-          <ul style="position:absolute; right: 430px; top: 485px;">Turkish Land Forces</ul>
-          <img src="https://static.wikia.nocookie.net/squad_gamepedia/images/9/97/TLFTeamImage_desert.jpg/revision/latest/scale-to-width-down/200?cb=20231215103341" alt="">
-
-    </ul> <br>
-    <div id="spis">
-
-  
+      <div id="spis">
     <h2 style="color:#f39c12">Быстрый поиск</h2>
    <p ><a href="oryj.html"   >1.Оружие </a></p>
       <p><a href="tech.html" >2.Техника</a></p>
       <p><a href="frac.html" >3.Фракции</a></p>
       </div>
+      <h4>Фракции</h4>
+          <div class="cont">
+          <div id="Us" class="c1"><p>US Army</p>
+          <img src="https://static.wikia.nocookie.net/squad_gamepedia/images/7/7d/US_Rifleman_Flag.jpg/revision/latest/scale-to-width-down/200?cb=20220427200922" alt="">
+        </div>
+          <div class="child"><p>Russian Ground Source</p>
+          <img src="https://static.wikia.nocookie.net/squad_gamepedia/images/2/2e/RUS_Rifleman_Flag.jpg/revision/latest/scale-to-width-down/200?cb=20220427200908" alt="" style="width: 200px">
+          </div>
+          <div class="child"><p>British Army</p>
+          <img src="https://static.wikia.nocookie.net/squad_gamepedia/images/d/d3/GB_Rifleman_Flag.jpg/revision/latest/scale-to-width-down/200?cb=20220427200746" alt="">
+          </div>
+          <div class="child"><p>Canadian Army</p>
+          <img src="https://static.wikia.nocookie.net/squad_gamepedia/images/c/cb/CAF_Rifleman_Flag.jpg/revision/latest/scale-to-width-down/200?cb=20220427200610" alt="">
+          </div>
+          <div class="child"><p>Insurgents</p>
+          <img  src="https://static.wikia.nocookie.net/squad_gamepedia/images/0/09/INS_Rifleman_Flag.jpg/revision/latest/scale-to-width-down/200?cb=20220427200817" alt="">
+          </div>
+          <div class="child"><p>Irregular Militia</p>
+          <img src="https://static.wikia.nocookie.net/squad_gamepedia/images/5/55/MIL_Rifleman_Flag.jpg/revision/latest/scale-to-width-down/200?cb=20240202105322" alt="">
+          </div>
+          <div class="child"><p>Middle Eastern Alliance</p>
+          <img src="https://static.wikia.nocookie.net/squad_gamepedia/images/1/11/MEA_Rifleman_Flag.jpg/revision/latest/scale-to-width-down/200?cb=20220427200849" alt="">
+          </div>
+          <div class="child"><p>Australian Army</p>
+          <img src="https://static.wikia.nocookie.net/squad_gamepedia/images/2/2e/AUS_Rifleman_Flag.jpg/revision/latest/scale-to-width-down/200?cb=20220427200341" alt="">
+          </div>
+          <div class="child"><p>Us Marine Corps</p>
+          <img src="https://static.wikia.nocookie.net/squad_gamepedia/images/c/ca/USMC_Rifleman_Flag.jpg/revision/latest/scale-to-width-down/200?cb=20221230161657" alt="">
+          </div>
+          <div class="child"><p>People's Liberation Army</p>
+          <img src="https://static.wikia.nocookie.net/squad_gamepedia/images/6/67/PLAImage.jpg/revision/latest/scale-to-width-down/200?cb=20221230155024" alt="">
+          </div>
+          <div class="child"><p>PLA Navy Marine Corps</p>
+          <img src="https://static.wikia.nocookie.net/squad_gamepedia/images/d/d7/PLANMC_Rifleman_Flag.jpg/revision/latest/scale-to-width-down/200?cb=20230624031711" alt="">
+          </div>
+          <div class="child"><p>Turkish Land Forces</p>
+          <img src="https://static.wikia.nocookie.net/squad_gamepedia/images/9/97/TLFTeamImage_desert.jpg/revision/latest/scale-to-width-down/200?cb=20231215103341" alt="">
+          </div>
+        </div>
             </main>
 
 
