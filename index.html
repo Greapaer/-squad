@@ -20,10 +20,8 @@
 </header>
     <style>
       ::selection{
-    background-color: #f39c12;
-  }
-    
-        
+    background-color: #6e4605;
+  }  
        #JOIN-NOW-BAR{
         color: #121212;
         font-weight: 1000;
@@ -62,13 +60,13 @@
     background-color: #1f1f1f;
     padding: 15px 30px;
   }
-  header, h1 {
+  header{
     margin: 0;
     color: #e74c3c;
     letter-spacing: 2px;
   }
   nav, a {
-    color: #e74c3c;
+    color: white;
     text-decoration: none;
     margin-right: 20px;
     font-weight: 500;
@@ -122,14 +120,20 @@
     color: white;
 
   }
+  #spis a:hover{
+    color: #f39c12;
+  }
   #spis{
     width: 360px;
-    justify-content: center;
     text-align: center;
     position: relative;
-    right: -150%;
+    right: 300px;
     border: 1px solid #f39c12;
     background-color: #000000;
+  }
+  #spis1{
+    position: sticky;
+    top: 30px;
   }
   table{  
     width: 300px;
@@ -152,9 +156,88 @@
     list-style: circle;
     list-style-position: inside;
   }
+  @media(max-width:2560px){
+    #spis{
+      right: -150%;
+    }
+  }
+  @media(max-width:1940px){
+    #spis{
+      right: -100%;
+    }
+    #video video{
+      width: 900px;
+    }
+  }
+  @media(max-width:1130px){
+    #spis{
+      right: -67%;
+      top: 100px;
+    }
+    header{
+      width: 960px;
+    }
+    #JOIN-NOW-BAR{
+      width: 1024px;
+    }
+    
+    #video video{
+      width: 640px;
+    }
+    footer{
+      width: 980px;
+    }
+  }
+  @media(max-width:860px){
+    #spis{
+      right: -72%;
+      width: 250px;
+    }
+    header{
+      width: 864px;
+    }
+    footer{
+      width: 960px;
+    }
+    #JOIN-NOW-BAR{
+      width: 924px;
+    }
+  }
+  @media(max-width:480px){
+    #spis{
+      right: -154%;
+    }
+    #p1{
+      width: 900px;
+    }
+    footer{
+      width: 880px;
+    }
+    nav{
+      font-size: 16px;
+      width: 100px;
+      text-wrap: 30px;
+    }
+  }
+  #p1::first-line{
+    color: #f39c12;
+  }
+
+.cont_1{
+  display: flex;
+  flex-wrap: wrap;
+}
+.cont_1:hover{
+  background-color: #383838;
+}
+.child{
+  width: 500px;
+  height: 400px;
+}
 </style>
 
 <main>
+  <div id="spis1">
   <div id="spis">
 
   
@@ -163,46 +246,76 @@
       <p><a href="tech.html" >2.Техника</a></p>
       <p><a href="frac.html" >3.Фракции</a></p>
       </div>
-  <h2>Добро пожаловать в мир Squad</h2> <br>
-  <img src="https://th.bing.com/th/id/OIP.arEDLJ1tVXzwIZRVMrYPjgAAAA?w=296&h=152&c=7&r=0&o=7&cb=12&dpr=1.3&pid=1.7&rm=3" width="600px" alt="Squad игровой процесс" />
-  <p style="font-size: 20px;">Squad — это тактический сетевой шутер от первого лица, который делает акцент на командное взаимодействие и реализм. Игра предлагает масштабные боевые столкновения с акцентом на координацию и стратегию.</p>
+      </div>
+  <h2 style="position: relative;top: -200px;right: -100px;font-size: 40px;">Добро пожаловать в мир Squad</h2> <br>
+  <div id="video">
+   <video id="myVideo" src="image/Squad _ Трейлер.mp4"autoplay muted loop playsinline width="1080px" style="position: relative; right: 100px; top: -200px;"></video>
+  </div>
+   <div id="p1"><p style="font-size: 24px;">Squad — это тактический сетевой шутер от первого лица, который делает акцент на командное взаимодействие и реализм. Игра предлагает масштабные боевые столкновения с акцентом на координацию и стратегию.</p></div>
   <br> 
-
+<script>
+  const video = document.getElementById('myVideo');
+  // Запретить приостановку
+  video.addEventListener('pause', () => {
+    video.play();
+  });
+  // Запретить перемотку
+  video.addEventListener('seeked', () => {
+    video.currentTime = 0; // или нужное значение
+  });
+</script>
 </table>
 </div> 
   <h2>Название карт в Squad</h2>
+  <div class="cont_1">
   <ol> 
-  
+  <div id="Narva" class="child">
     <li>Narva</li><br>
     <img src="https://www.bing.com/th/id/OIP.RaklrXt11v75IPoP_ZowUAHaHa?w=204&h=211&c=8&rs=1&qlt=90&o=6&cb=12&dpr=1.3&pid=3.1&rm=2" alt="Narva" width="300px" height="300px">
-    <p style="position: relative;left: 320px;bottom: 350px ; vertical-align:sub 300px; width: 500px; font-size: 20px;">Городская карта с узкими улицами и многоэтажными зданиями, идеально подходящая для ближнего боя и обороны.</p> <br> 
+    <p style="position: relative;left: 320px;bottom: 350px ; vertical-align:sub 300px; font-size: 20px;">Городская карта с узкими улицами и многоэтажными зданиями, идеально подходящая для ближнего боя и обороны.</p> <br> 
+    </div>
+    <div id="Basrah" class="child">
     <li>Al Basrah</li><br>
     <img src="https://th.bing.com/th/id/OIP.hANu9FAwtu3K89vJtgfeOgHaHa?w=156&h=180&c=7&r=0&o=7&cb=12&dpr=1.3&pid=1.7&rm=3" alt="Al Basrah" width="300px" height="300px">  
-    <p  style="position: relative;left: 320px;bottom: 350px ; vertical-align:sub 300px;width: 500px;font-size: 20px;" >Арабский город с открытыми площадями, каналами и руинами, требующая тактического подхода и контроля ключевых точек.</p>
-    <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><li>Sumari Bala</li>  <br>
+    <p  style="position: relative;left: 320px;bottom: 350px ; vertical-align:sub 300px;font-size: 20px;" >Арабский город с открытыми площадями, каналами и руинами, требующая тактического подхода и контроля ключевых точек.</p>
+    </div>
+
+    <div id="Sumari" class="child"><li>Sumari Bala</li>  <br>
 <img src="https://th.bing.com/th/id/OIP.FxG9lnG7EwSRd3qoOzC3jwHaHa?w=182&h=182&c=7&r=0&o=7&cb=12&dpr=1.3&pid=1.7&rm=3" alt="Sumari Bala" width="300px" height="300px">  
 <p style="position: relative;left: 320px;bottom: 350px ; vertical-align:sub 300px;width: 500px;font-size: 20px;">Горная и лесистая местность с узкими тропами и укреплениями, подходящая для скрытных операций и засады.</p> <br>
 </div>
+<div id="Kohai" class="child">
 <li>Kohat Toi</li>  <br>
 <img src="https://th.bing.com/th/id/OIP.poIJxcXEPhmsekovlWX00gHaHa?w=181&h=182&c=7&r=0&o=7&cb=12&dpr=1.3&pid=1.7&rm=3" alt="Kohat Toi" width="300px" height="300px">  
 <p style="position: relative;left: 320px;bottom: 350px ; vertical-align:sub 300px;width: 500px;font-size: 20px;">Пустынная карта с открытыми пространствами и редкими укрытиями, требующая точной стрельбы и быстрого перемещения.</p> <br>
+</div>
+<div id="Yeh" class="child">
 <li>Yehorivka</li>  <br>
 <img src="https://th.bing.com/th/id/OIP.XT7FMvbYz9EQyWMqvWESpwHaHa?w=161&h=180&c=7&r=0&o=7&cb=12&dpr=1.3&pid=1.7&rm=3" alt="Yehorivka" width="300px" height="300px">  
 <p style="position: relative;left: 320px;bottom: 350px ; vertical-align:sub 300px;width: 500px;font-size: 20px;">Сельская местность с реками, мостами и деревнями, хороша для мобильных боёв и контроля стратегических точек.</p> <br>
+</div>
+<div id="Viretsk" class="child">
 <li>Viretsk</li>  <br>
 <img src="https://th.bing.com/th/id/OIP.lu85T7HJjNETSEGD5fno6AHaHa?w=185&h=185&c=7&r=0&o=7&cb=12&dpr=1.3&pid=1.7&rm=3" alt="Viretsk" width="300px" height="300px">  
 <p style="position: relative;left: 320px;bottom: 350px  ; vertical-align:sub 300px;width: 500px;font-size: 20px;">Гористая местность с лесами и укреплениями, подходит для тактических манёвров и обороны.</p> <br>
+</div>
+<div id="fools" class="child">
 <li>Fools Road</li>  <br>
 <img src="https://th.bing.com/th/id/OIP.UkIPrnieZsxDqLn_4CRSIwHaHa?w=186&h=186&c=7&r=0&o=7&cb=12&dpr=1.3&pid=1.7&rm=3" alt="Fools Road" width="300px" height="300px">  
 <p style="position: relative;left: 320px;bottom: 350px ; vertical-align:sub 300px;width: 500px;font-size: 20px;">Дорожная карта с открытыми полями и узкими просёлками, идеально для быстрых атак и засад.</p> <br>
+</div>
+<div id="Dera" class="child">
 <li>Dera tox</li>  <br>
 <img src="https://th.bing.com/th/id/OIP.MwvY28puGJl79_1CLH2w8AHaHa?w=265&h=198&c=7&r=0&o=7&cb=12&dpr=1.3&pid=1.7&rm=3" alt="Dera tox" width="300px" height="300px">  
 <p style="position: relative;left: 320px;bottom: 350px ; vertical-align:sub 300px;width: 500px;font-size: 20px;">Руины и промышленные зоны с узкими проходами, создающие напряжённую атмосферу боя.</p> <br>
+</div>
+<div id="Logar" class="child">
 <li>Logar Valley</li>  <br>
 <img src="https://th.bing.com/th/id/OIP.t-FXBENmwVMmAKC35DLlnAHaHa?w=184&h=184&c=7&r=0&o=7&cb=12&dpr=1.3&pid=1.7&rm=3" alt="Logar Valley" width="300px" height="300px">  
 <p style="position: relative;left: 320px;bottom: 350px  ; vertical-align:sub 300px;width: 500px;font-size: 20px;"> Долина с реками, лесами и холмами, предоставляющая разнообразные тактические возможности и укрытия.</p> <br> 
   </ol>
-  
+  </div>
+  </div>
 </main>
 
     <footer>
