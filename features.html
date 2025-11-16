@@ -19,6 +19,37 @@
 </header>
 
 <style>
+  @media(max-width:2460px){
+    #spis{
+      right: -150%;
+    }
+  }
+  @media(max-width:1940px){
+    #spis{
+      right: -100%;
+    }
+  }
+  @media(max-width:1100px){
+    #spis{
+      right: -80%;
+    }
+  }
+  @media(max-width:870px){
+    #spis{
+      right: -50%;
+      width: 250px;
+    }
+  }
+  @media(max-width:480px){
+    #spis{
+      right: -43%;
+    }
+    nav{
+      font-size: 16px;
+      width: 100px;
+      text-wrap: 30px;
+    }
+  }
   #JOIN-NOW-BAR{
         color: #121212;
         font-weight: 1000;
@@ -49,8 +80,11 @@
     color: #e74c3c;
     letter-spacing: 2px;
   }
+  #spis a:hover{
+    color: #f39c12;
+  }
   nav a {
-    color: #e74c3c;
+    color: white;
     text-decoration: none;
     margin-right: 20px;
     font-weight: 600;
@@ -116,7 +150,7 @@
   font-size: 20px;
 }
   ::selection{
-    background-color: #f39c12;
+    background-color: #6e4605;
   }
   li{
     list-style:none;
@@ -126,6 +160,10 @@
   li::first-letter{
     color: #f39c12;
     font-size: 30px;
+  }
+  #spis1{
+    position: sticky;
+    top: 30px;
   }
   li:hover{
     list-style: circle;
@@ -150,8 +188,72 @@
 #slider img.active {
   opacity: 1;
 }
+  @media(max-width:2560px){
+    #spis{
+      right: -150%;
+    }
+  }
+  @media(max-width:1940px){
+    #spis{
+      right: -100%;
+    }
+    #video video{
+      width: 900px;
+    }
+  }
+  @media(max-width:1130px){
+    #spis{
+      right: -72%;
+      top: 100px;
+    }
+    header{
+      width: 960px;
+    }
+    #JOIN-NOW-BAR{
+      width: 1024px;
+    }
+    
+    #video video{
+      width: 640px;
+    }
+    footer{
+      width: 980px;
+    }
+  }
+  @media(max-width:860px){
+    #spis{
+      right: -72%;
+      width: 250px;
+    }
+    header{
+      width: 864px;
+    }
+    footer{
+      width: 960px;
+    }
+    #JOIN-NOW-BAR{
+      width: 924px;
+    }
+  }
+  @media(max-width:480px){
+    #spis{
+      right: -154%;
+    }
+    #p1{
+      width: 900px;
+    }
+    footer{
+      width: 880px;
+    }
+    nav{
+      font-size: 16px;
+      width: 100px;
+      text-wrap: 30px;
+    }
+  }
 </style>
 <main>
+  <div id="spis1">
   <div id="spis">
 
   
@@ -160,7 +262,8 @@
       <p><a href="tech.html" >2.Техника</a></p>
       <p><a href="frac.html" >3.Фракции</a></p>
       </div>
-  <h2>Особенности игры Squad</h2> <br>
+      </div>
+  <h2 style="position: relative; top: -180px; font-size: 40px; right: -150px;">Особенности игры Squad</h2> <br>
   <div id="slider">
   <img src="https://cdn.prod.website-files.com/651f0cc8da4d313d93a4be72/65df7a64a06251a0653489fb_SQ_Map_Goose_Bay_01_1920x700-p-1080.jpeg" class="active" />
   <img src="https://cdn.prod.website-files.com/651f0cc8da4d313d93a4be72/65df7a3b78ec4b7709000c87_SQ_Map_Fallujah_01_1920x700-p-1080.jpeg" />
